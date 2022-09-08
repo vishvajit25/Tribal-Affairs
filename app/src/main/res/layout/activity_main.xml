@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="FAMILY ID SETTING : " />
+
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:id="@+id/familyheadname"
+        android:hint="FAMILY HEAD NAME : " />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="FAMILY ID : "
+        android:layout_marginTop="90dp"
+        android:id="@+id/familyid"/>
+
+    <EditText
+        android:id="@+id/familyaddress"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:hint="FAMILY ADDRESS : " />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="TRIBE NAME : "
+        android:layout_marginTop="170dp"
+        android:id="@+id/tribename"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="NUMBER OF FAMILY MEMBERS :"
+        android:layout_marginTop="210dp"
+        android:id="@+id/familysize"/>
+    <AutoCompleteTextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="FAMILY TYPE : "
+        android:layout_marginTop="250dp"
+        android:id="@+id/familytype"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="CREATE"
+        android:layout_marginTop="300dp"
+        android:id="@+id/create"/>
+
+
+</RelativeLayout>
