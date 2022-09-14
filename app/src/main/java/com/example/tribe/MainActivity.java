@@ -2,6 +2,7 @@ package com.example.tribe;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Parcelable;
@@ -21,7 +22,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 public class MainActivity extends AppCompatActivity {
     String[] type = {"Nuclear", "Joint"};
-    Button create;
+    Button create,next;
     EditText familyheadname, id,address,tribename,familysize;
     AutoCompleteTextView familytype;
     private FirebaseAuth mAuth;
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         familysize=findViewById(R.id.familysize);
         familytype=findViewById(R.id.familytype);
         create=findViewById(R.id.create);
+        next=findViewById(R.id.next);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(),
                 android.R.layout.simple_selectable_list_item,type);
         familytype.setAdapter(adapter);
@@ -66,7 +68,16 @@ public class MainActivity extends AppCompatActivity {
             Family family = new Family(fheadname, fid, faddress,ftribename,fsize,ftype);
             reff.child("Family").push().setValue(family);
             Toast.makeText(MainActivity.this, "New Family Created", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            finish();
 
+            }
+        });
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, BasicDetails.class);
+                startActivity(intent);
             }
         });
     }

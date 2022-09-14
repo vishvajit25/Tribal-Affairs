@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    tools:context=".PersonalDetails">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:text="PERSONAL DETAILS : "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <AutoCompleteTextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="MARRITAL STATUS : "
+        android:layout_marginTop="50dp"
+        android:id="@+id/marriage"/>
+
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="RELIGION : "
+        android:layout_marginTop="90dp"
+        android:id="@+id/religion"/>
+
+    <EditText
+        android:id="@+id/caste"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:hint="SUB-CASTE : "
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:hint="AGE : "
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/relationship"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:hint="RELATIONSHIP WITH HEAD : " />
+    <EditText
+        android:id="@+id/qualification"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:hint="QUALIFICATION : " />
+
+    <EditText
+        android:id="@+id/certification"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        android:hint="ANY SPECIAL CERTIFICATION : " />
+    <AutoCompleteTextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="MARRITAL STATUS : "
+        android:layout_marginTop="330dp"
+        android:id="@+id/employment"/>
+    <EditText
+        android:id="@+id/role"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="370dp"
+        android:hint="ROLE : " />
+    <EditText
+        android:id="@+id/companyname"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="410dp"
+        android:hint="ORGANIZATION NAME : " />
+    <EditText
+        android:id="@+id/income"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:hint="MONTHLY INCOME : " />
+
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="NEXT"
+        android:layout_marginTop="490dp"
+        android:id="@+id/next"/>
+
+
+</RelativeLayout>

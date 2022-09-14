@@ -10,14 +10,34 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tribe">
         <activity
-            android:name=".MainActivity"
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".TakePic"
+            android:exported="false" />
+        <activity
+            android:name=".HouseDetails"
+            android:exported="false" />
+        <activity
+            android:name=".EducationDetails"
+            android:exported="false" />
+        <activity
+            android:name=".PersonalDetails"
+            android:exported="false" />
+        <activity
+            android:name=".BasicDetails"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
