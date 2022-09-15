@@ -18,7 +18,7 @@
 
 
     <EditText
-        android:id="@+id/name"
+        android:id="@+id/name1"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -45,10 +45,10 @@
         android:layout_height="wrap_content"
         android:hint="FAMILY ID : "
         android:layout_marginTop="90dp"
-        android:id="@+id/familyid"/>
+        android:id="@+id/familyid1"/>
 
     <EditText
-        android:id="@+id/familyaddress"
+        android:id="@+id/aadhar"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="130dp"
@@ -56,7 +56,7 @@
         android:inputType="number" />
 
     <EditText
-        android:id="@+id/tribename"
+        android:id="@+id/phoneno"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="170dp"
@@ -64,7 +64,7 @@
         android:inputType="phone" />
 
     <EditText
-        android:id="@+id/familysize"
+        android:id="@+id/org"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="210dp"
