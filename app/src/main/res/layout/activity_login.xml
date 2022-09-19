@@ -21,6 +21,8 @@
         android:gravity="center_horizontal"
         android:text="LOGIN"
         android:elevation="4dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         android:layout_gravity="center"
         android:layout_marginTop="@android:dimen/app_icon_size"
         android:textSize="30sp" />

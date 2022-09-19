@@ -104,24 +104,26 @@ tools:context=".EducationDetails">
         android:src="@drawable/nav"/>
 
     <Button
-        android:layout_width="135dp"
-        android:layout_height="50dp"
         android:id="@+id/map"
-        android:layout_alignParentBottom="true"
-        android:background="@android:color/transparent" />
-    <Button
         android:layout_width="135dp"
         android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent" />
+
+    <Button
         android:id="@+id/search"
-        android:layout_marginLeft="135dp"
-        android:layout_alignParentBottom="true"
-        android:background="@android:color/transparent" />
-    <Button
         android:layout_width="135dp"
         android:layout_height="50dp"
-        android:id="@+id/about"
-        android:layout_marginLeft="270dp"
         android:layout_alignParentBottom="true"
+        android:layout_marginLeft="135dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="270dp"
         android:background="@android:color/transparent" />
 
 
