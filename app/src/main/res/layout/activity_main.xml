@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/bg"
     android:layout_height="match_parent"
-    android:layout_marginLeft="10dp"
     tools:context=".MainActivity">
 
     <TextView
@@ -14,62 +14,139 @@
         android:textColor="@color/black"
         android:textSize="20dp"
         android:textStyle="bold"
+        android:layout_marginLeft="10dp"
         android:text="FAMILY ID SETTING : " />
 
 
     <EditText
+        android:id="@+id/familyheadname"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="50dp"
-        android:id="@+id/familyheadname"
+        android:textColor="@color/black"
         android:hint="FAMILY HEAD NAME : " />
 
     <EditText
+        android:id="@+id/familyid"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:hint="FAMILY ID : "
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="90dp"
-        android:id="@+id/familyid"/>
+        android:hint="FAMILY ID (number): " />
 
     <EditText
         android:id="@+id/familyaddress"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="130dp"
         android:hint="FAMILY ADDRESS : " />
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:text=" STATE : TAMILNADU" />
+    <EditText
+        android:id="@+id/district"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="10dp"
+        android:hint="DISTRICT : " />
+    <EditText
+        android:id="@+id/block"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="250dp"
+        android:hint="BLOCK : " />
+    <EditText
+        android:id="@+id/taluk"
+        android:layout_width="350dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        android:hint="TALUK : " />
+    <EditText
+        android:id="@+id/panchayat"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="330dp"
+        android:hint="PANCHAYAT : " />
+
     <EditText
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:hint="TRIBE NAME : "
-        android:layout_marginTop="170dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="370dp"
         android:id="@+id/tribename"/>
 
     <EditText
         android:id="@+id/familysize"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="210dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="410dp"
         android:hint="NUMBER OF FAMILY MEMBERS :" />
+
     <AutoCompleteTextView
+        android:id="@+id/familytype"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:hint="FAMILY TYPE : "
-        android:layout_marginTop="250dp"
-        android:id="@+id/familytype"/>
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="10dp"
+        android:hint="FAMILY TYPE : " />
 
     <Button
         android:id="@+id/create"
         android:layout_width="200dp"
+        android:layout_marginLeft="10dp"
         android:layout_height="40dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="500dp"
         android:text="CREATE" />
 
     <Button
         android:id="@+id/next"
         android:layout_width="200dp"
+        android:layout_marginLeft="10dp"
         android:layout_height="40dp"
-        android:layout_marginTop="340dp"
+        android:layout_marginTop="540dp"
         android:text="+ ADD FAMILY MEMBERS" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/nav"/>
+
+    <Button
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:id="@+id/map"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent" />
+    <Button
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:id="@+id/search"
+        android:layout_marginLeft="135dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent" />
+    <Button
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:id="@+id/about"
+        android:layout_marginLeft="270dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent" />
 
 
 </RelativeLayout>

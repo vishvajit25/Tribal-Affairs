@@ -4,68 +4,126 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-android:layout_marginLeft="10dp"
+    android:background="@drawable/bg"
 tools:context=".EducationDetails">
 
-<TextView
-    android:layout_width="300dp"
-    android:layout_height="30dp"
-    android:layout_marginTop="10dp"
-    android:text="EDUCATIONAL DETAILS : "
-    android:textColor="@color/black"
-    android:textSize="20dp"
-    android:textStyle="bold" />
-<AutoCompleteTextView
-    android:layout_width="200dp"
-    android:layout_height="wrap_content"
-    android:hint="EDUCATION : "
-    android:layout_marginTop="50dp"
-    android:id="@+id/education"/>
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="EDUCATIONAL DETAILS : "
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textStyle="bold" />
 
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:text="HIGHEST EDUCATION : "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
+    <EditText
+        android:id="@+id/highestedu"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="90dp"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="10dp"
+        android:text="NAME OF SCHOOL : "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
     <EditText
         android:id="@+id/nameofedu"
         android:layout_width="300dp"
+        android:layout_marginLeft="210dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="90dp"
-        android:hint="NAME OF SCHOOL/COLLEGE : " />
+        android:layout_marginTop="120dp" />
 
-<EditText
-    android:id="@+id/highestedu"
-    android:layout_width="250dp"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="130dp"
-    android:hint="HIGHEST EDUCATION : "
-    android:inputType="text" />
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="160dp"
+        android:text="DISTANCE OF SCHOOL : "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
 <EditText
     android:id="@+id/distance"
     android:layout_width="250dp"
+    android:layout_marginLeft="240dp"
     android:layout_height="wrap_content"
-    android:layout_marginTop="170dp"
-    android:hint="DISTANCE OF SCHOOL (km) : "
+    android:layout_marginTop="150dp"
     android:inputType="phone" />
-<EditText
-    android:id="@+id/angavadi"
-    android:layout_width="250dp"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="210dp"
-    android:hint="HOW FAR IS ANGAVADI : " />
-
-<EditText
-    android:id="@+id/eduexpense"
-    android:layout_width="250dp"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="250dp"
-    android:hint="EDUCATION EXPENSE : " />
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="190dp"
+        android:text="MONTHLY EDUCATIONAL EXPENSES :"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
 
-<Button
-    android:layout_width="200dp"
-    android:layout_height="40dp"
-    android:text="NEXT"
-    android:layout_marginTop="290dp"
-    android:id="@+id/next"/>
+    <EditText
+        android:id="@+id/eduexpense"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="205dp" />
+
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:gravity="center_horizontal"
+        android:text="NEXT" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/nav"/>
+
+    <Button
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:id="@+id/map"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent" />
+    <Button
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:id="@+id/search"
+        android:layout_marginLeft="135dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent" />
+    <Button
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:id="@+id/about"
+        android:layout_marginLeft="270dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent" />
+
 
 
 </RelativeLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginLeft="10dp"
+    android:background="@drawable/bg"
     tools:context=".BasicDetails">
 
     <TextView
@@ -14,6 +14,7 @@
         android:text="BASIC DETAILS : "
         android:textColor="@color/black"
         android:textSize="20dp"
+        android:layout_marginLeft="10dp"
         android:textStyle="bold" />
 
 
@@ -22,6 +23,7 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
         android:hint="NAME : " />
 
     <ImageView
@@ -30,18 +32,19 @@
         android:layout_height="120dp"
         android:src="@mipmap/ic_launcher_round"
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="250dp"
+        android:layout_marginLeft="260dp"
         tools:ignore="Suspicious0dp"/>
     <Button
         android:id="@+id/pic"
         android:layout_width="120dp"
         android:layout_height="40dp"
         android:layout_marginTop="150dp"
-        android:layout_marginLeft="250dp"
+        android:layout_marginLeft="260dp"
         android:text="SNAP" />
 
     <EditText
         android:layout_width="200dp"
+        android:layout_marginLeft="10dp"
         android:layout_height="wrap_content"
         android:hint="FAMILY ID : "
         android:layout_marginTop="90dp"
@@ -49,6 +52,7 @@
 
     <EditText
         android:id="@+id/aadhar"
+        android:layout_marginLeft="10dp"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="130dp"
@@ -60,6 +64,7 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="170dp"
+        android:layout_marginLeft="10dp"
         android:hint="PHONE NUMBER : "
         android:inputType="phone" />
 
@@ -68,20 +73,49 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="210dp"
+        android:layout_marginLeft="10dp"
         android:hint="ORGANIZATION : " />
     <AutoCompleteTextView
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:hint="GENDER : "
         android:layout_marginTop="250dp"
+        android:layout_marginLeft="10dp"
         android:id="@+id/gender"/>
 
     <Button
         android:id="@+id/next"
         android:layout_width="200dp"
         android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="300dp"
         android:text="NEXT" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/nav"/>
+
+    <Button
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:id="@+id/map"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent" />
+    <Button
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:id="@+id/search"
+        android:layout_marginLeft="135dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent" />
+    <Button
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:id="@+id/about"
+        android:layout_marginLeft="270dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent" />
 
 
 </RelativeLayout>
