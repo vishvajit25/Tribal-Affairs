@@ -10,50 +10,97 @@ tools:context=".HouseDetails">
 
     <TextView
         android:layout_width="300dp"
-        android:layout_height="30dp"
+        android:layout_height="40dp"
         android:layout_marginTop="10dp"
         android:text="HOUSE DETAILS : "
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="10dp"
+        android:text="HOUSE OWNERSHIP : "
         android:textColor="@color/black"
         android:textSize="20dp"
         android:textStyle="bold" />
 
 
-
     <AutoCompleteTextView
+        android:id="@+id/ownorrent"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:hint="OWN OR RENT : "
-        android:layout_marginTop="50dp"
-        android:id="@+id/ownorrent"/>
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="60dp" />
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="110dp"
+        android:text="MODE OF PURCHASE : "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
 
     <EditText
         android:id="@+id/modeofpurchase"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="90dp"
-        android:textSize="15dp"
-        android:hint="GIVEN BY GOVT OR PURCHASED OR ANCESTRAL : " />
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="230dp"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="10dp"
+        android:text="TYPE OF HOUSE : "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
     <AutoCompleteTextView
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:hint="TYPE OF HOUSE : "
-        android:layout_marginTop="130dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="140dp"
         android:id="@+id/type"/>
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="190dp"
+        android:text="PROPERTY : "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
     <AutoCompleteTextView
-        android:layout_width="200dp"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
-        android:hint="PROPERTY : "
-        android:layout_marginTop="170dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="180dp"
         android:id="@+id/property"/>
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="230dp"
+        android:text="LAND SIZE : "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
     <EditText
-            android:id="@+id/distance"
+            android:id="@+id/size"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="210dp"
-            android:hint="LAND SIZE : "
+            android:layout_marginTop="220dp"
+            android:layout_marginLeft="130dp"
             android:inputType="phone" />
 
 
@@ -61,8 +108,36 @@ tools:context=".HouseDetails">
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:text="NEXT"
-        android:layout_marginTop="250dp"
+        android:background="#216400"
+        android:textColor="@color/white"
+        android:layout_marginTop="290dp"
+        android:layout_centerHorizontal="true"
         android:id="@+id/next"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/nav"/>
 
+    <Button
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:id="@+id/map"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent" />
+    <Button
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:id="@+id/search"
+        android:layout_marginLeft="135dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent" />
+    <Button
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:id="@+id/about"
+        android:layout_marginLeft="270dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent" />
 
 </RelativeLayout>

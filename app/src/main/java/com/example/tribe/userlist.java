@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -23,6 +24,7 @@ public class userlist extends AppCompatActivity {
     DatabaseReference databaseReference;
     MyAdapter myAdapter;
     ArrayList<User> list;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,13 +43,17 @@ public class userlist extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
 
                 for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+
                     User user = dataSnapshot.getValue(User.class);
-                    SharedPreferences sp4=getSharedPreferences("SearchName",0);
-                    String name=sp4.getString("name", null);
-                    String id=sp4.getString("id", null);
-                    if(name.equals(user.getName()) && id.equals(user.getFamilyid())) {
+//                    list.add(user);
+                    SharedPreferences sp3=getSharedPreferences("SearchName",0);
+                    String name=sp3.getString("name", null);
+                    String id=sp3.getString("id", null);
+                    Log.d("Name",name);
+                    if(name.equals(user.getname())) {
                         list.add(user);
                     }
+
                 }
                 myAdapter.notifyDataSetChanged();
             }

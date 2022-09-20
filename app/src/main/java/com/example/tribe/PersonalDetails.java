@@ -24,6 +24,7 @@ import com.google.firebase.storage.StorageReference;
 
 public class PersonalDetails extends AppCompatActivity {
     Button next;
+    Button map,search,about;
     EditText rel,subcaste,age,relation,qual,cert,role,org,income;
     AutoCompleteTextView marriage,emp;
     FirebaseStorage storage;
@@ -37,6 +38,30 @@ public class PersonalDetails extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_personal_details);
         rel=findViewById(R.id.religion);
+        map=findViewById(R.id.map);
+        map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), news.class));
+                finish();
+            }
+        });
+        search=findViewById(R.id.search);
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), search.class));
+                finish();
+            }
+        });
+        about=findViewById(R.id.about);
+        about.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), about.class));
+                finish();
+            }
+        });
         subcaste=findViewById(R.id.caste);
         reff = FirebaseDatabase.getInstance().getReference();
         age=findViewById(R.id.age);
@@ -91,6 +116,16 @@ public class PersonalDetails extends AppCompatActivity {
                 String organiz = org.getText().toString();
                 String incoming = income.getText().toString();
                 reff.child("Person").child(key).child("marriage").setValue(mar);
+                reff.child("Person").child(key).child("caste").setValue(caste);
+                reff.child("Person").child(key).child("religion").setValue(religion);
+                reff.child("Person").child(key).child("relationship").setValue(relationship);
+                reff.child("Person").child(key).child("emp").setValue(employ);
+                reff.child("Person").child(key).child("age").setValue(agestring);
+                reff.child("Person").child(key).child("qualification").setValue(qua);
+                reff.child("Person").child(key).child("cert").setValue(certifi);
+                reff.child("Person").child(key).child("role").setValue(roles);
+                reff.child("Person").child(key).child("orgname").setValue(organiz);
+                reff.child("Person").child(key).child("income").setValue(incoming);
 
 
                 startActivity(new Intent(getApplicationContext(), BankDetails.class));

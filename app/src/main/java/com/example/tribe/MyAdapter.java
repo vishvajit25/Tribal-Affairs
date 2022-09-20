@@ -31,7 +31,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         User user = list.get(position);
-        holder.Name.setText(user.getName());
+        holder.Name.setText(user.getname());
         holder.familyid.setText(user.getFamilyid());
         holder.aadharno.setText(user.getAadharno());
         holder.phoneno.setText(user.getPhoneno());
@@ -146,7 +146,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
              cert=itemView.findViewById(R.id.rcert);
              emp=itemView.findViewById(R.id.remp);
              role=itemView.findViewById(R.id.rrole);
-             orgname=itemView.findViewById(R.id.rorg);
+             orgname=itemView.findViewById(R.id.rcomp);
              income=itemView.findViewById(R.id.rincome);
              bankacc=itemView.findViewById(R.id.rbankacc);
              bankname=itemView.findViewById(R.id.rbname);

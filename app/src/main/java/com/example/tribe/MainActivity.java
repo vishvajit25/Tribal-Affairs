@@ -23,6 +23,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 public class MainActivity extends AppCompatActivity {
     String[] type = {"Nuclear", "Joint"};
     Button create,next;
+    Button map,about,search;
     EditText familyheadname, id,address,tribename,familysize;
     AutoCompleteTextView familytype;
     private FirebaseAuth mAuth;
@@ -36,6 +37,30 @@ public class MainActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         fstore = FirebaseFirestore.getInstance();
         setContentView(R.layout.activity_main);
+        map=findViewById(R.id.map);
+        map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), news.class));
+                finish();
+            }
+        });
+        search=findViewById(R.id.search);
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), search.class));
+                finish();
+            }
+        });
+        about=findViewById(R.id.about);
+        about.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), about.class));
+                finish();
+            }
+        });
         familyheadname = findViewById(R.id.familyheadname);
         id=findViewById(R.id.familyid);
         address = findViewById(R.id.familyaddress);

@@ -36,7 +36,7 @@ public class search extends AppCompatActivity {
                 Ed.putString("name",name );
                 Ed.putString("id",id );
                 Ed.commit();
-                Intent intent = new Intent(com.example.tribe.search.this, result.class);
+                Intent intent = new Intent(com.example.tribe.search.this, userlist.class);
                 startActivity(intent);
             }
         });

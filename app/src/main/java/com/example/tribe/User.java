@@ -1,7 +1,7 @@
 package com.example.tribe;
 
 public class User {
-     String Name;
+     String name;
      String familyid;
      String aadharno;
      String phoneno;
@@ -10,8 +10,8 @@ public class User {
      String marriage;
      String religion;
 
-    public String getName() {
-        return Name;
+    public String getname() {
+        return name;
     }
 
     public String getFamilyid() {

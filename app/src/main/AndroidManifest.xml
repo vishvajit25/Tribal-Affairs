@@ -10,8 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tribe">
         <activity
-            android:name=".userlist"
+            android:name=".about"
             android:exported="false" />
+        <activity
+            android:name=".userlist"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".result"
             android:exported="false"

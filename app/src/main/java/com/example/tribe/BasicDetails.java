@@ -58,6 +58,7 @@ public class BasicDetails extends AppCompatActivity {
     AutoCompleteTextView gender;
     FirebaseStorage storage;
     StorageReference storageReference;
+    Button map,about,search2;
     private FirebaseAuth mAuth;
     FirebaseFirestore fstore;
     DatabaseReference reff;
@@ -79,6 +80,30 @@ public class BasicDetails extends AppCompatActivity {
         setContentView(R.layout.activity_basic_details);
         next = findViewById(R.id.next);
         image = findViewById(R.id.imageview);
+        map=findViewById(R.id.map);
+        map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), news.class));
+                finish();
+            }
+        });
+        search2=findViewById(R.id.search);
+        search2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), search.class));
+                finish();
+            }
+        });
+        about=findViewById(R.id.about);
+        about.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), about.class));
+                finish();
+            }
+        });
         etname = findViewById(R.id.name1);
         aadhar = findViewById(R.id.aadhar);
         reff = FirebaseDatabase.getInstance().getReference();
