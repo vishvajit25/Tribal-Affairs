@@ -47,11 +47,12 @@
         android:id="@+id/state"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="180dp"
         android:layout_marginLeft="10dp"
-        android:textSize="18dp"
+        android:layout_marginTop="180dp"
+        android:text=" STATE : TAMILNADU"
+        android:textStyle="bold"
         android:textColor="@color/black"
-        android:text=" STATE : TAMILNADU" />
+        android:textSize="18dp" />
     <EditText
         android:id="@+id/district"
         android:layout_width="350dp"

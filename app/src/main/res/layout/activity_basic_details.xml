@@ -30,10 +30,10 @@
         android:id="@+id/imageview"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:src="@mipmap/ic_launcher_round"
-        android:layout_marginTop="30dp"
         android:layout_marginLeft="260dp"
-        tools:ignore="Suspicious0dp"/>
+        android:layout_marginTop="30dp"
+        android:src="@drawable/person"
+        tools:ignore="Suspicious0dp" />
 
     <Button
         android:id="@+id/pic"

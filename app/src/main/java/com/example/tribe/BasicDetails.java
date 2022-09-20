@@ -11,6 +11,7 @@ import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.ContentResolver;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.Color;
@@ -21,6 +22,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -127,10 +129,10 @@ public class BasicDetails extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (name==null) {
+                if (etname.getText().toString().equals("")) {
                     etname.setError("Name is required.");
                 }
-                if (famid==null) {
+                if (fid.getText().toString().equals("")) {
                     fid.setError("FamilyID cant be empty.");
                 }
                 else {
@@ -143,7 +145,6 @@ public class BasicDetails extends AppCompatActivity {
                     ByteArrayOutputStream baos = new ByteArrayOutputStream();
                     bitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos);
                     byte[] data = baos.toByteArray();
-
                     UploadTask uploadTask = imagenameref.putBytes(data);
                     uploadTask.addOnFailureListener(new OnFailureListener() {
                         @Override
@@ -164,8 +165,15 @@ public class BasicDetails extends AppCompatActivity {
                     String phonenumber=phoneno.getText().toString();
                     String org=organization.getText().toString();
                     String genderstr = gender.getText().toString();
+                    SharedPreferences sp=getSharedPreferences("Name", 0);
+                    SharedPreferences.Editor Ed=sp.edit();
+                    Ed.putString("key",name+famid );
+                    Ed.commit();
                     Person person = new Person(name,famid,aadharno,phonenumber,org,genderstr,"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","");
-                    reff.child("Person").push().setValue(person);
+                    String key = reff.child("Person").push().getKey();
+                    reff.child("Person").child(name+famid).setValue(person);
+                    Toast.makeText(BasicDetails.this, key, Toast.LENGTH_SHORT).show();
+                    Log.d("tag",key);
                     Intent intent = new Intent(BasicDetails.this, PersonalDetails.class);
                     startActivity(intent);
                 }
