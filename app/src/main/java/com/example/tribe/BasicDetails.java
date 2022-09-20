@@ -37,6 +37,9 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.api.Context;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
@@ -53,6 +56,9 @@ public class BasicDetails extends AppCompatActivity {
     AutoCompleteTextView gender;
     FirebaseStorage storage;
     StorageReference storageReference;
+    private FirebaseAuth mAuth;
+    FirebaseFirestore fstore;
+    DatabaseReference reff;
     FusedLocationProviderClient client;
     private ArrayList<String> pathArray;
     private int array_position;
@@ -73,6 +79,9 @@ public class BasicDetails extends AppCompatActivity {
         image = findViewById(R.id.imageview);
         etname = findViewById(R.id.name1);
         aadhar = findViewById(R.id.aadhar);
+        reff = FirebaseDatabase.getInstance().getReference();
+        mAuth = FirebaseAuth.getInstance();
+        fstore = FirebaseFirestore.getInstance();
         phoneno = findViewById(R.id.phoneno);
         organization = findViewById(R.id.org);
         gender = findViewById(R.id.gender);
@@ -149,6 +158,14 @@ public class BasicDetails extends AppCompatActivity {
                             // ...
                         }
                     });
+                    String name=etname.getText().toString();
+                    String aadharno = aadhar.getText().toString();
+                    String famid=fid.getText().toString();
+                    String phonenumber=phoneno.getText().toString();
+                    String org=organization.getText().toString();
+                    String genderstr = gender.getText().toString();
+                    Person person = new Person(name,famid,aadharno,phonenumber,org,genderstr,"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","");
+                    reff.child("Person").push().setValue(person);
                     Intent intent = new Intent(BasicDetails.this, PersonalDetails.class);
                     startActivity(intent);
                 }

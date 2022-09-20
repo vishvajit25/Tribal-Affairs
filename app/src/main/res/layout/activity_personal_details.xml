@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
-    android:layout_marginLeft="10dp"
+    android:background="@drawable/bg2"
     tools:context=".PersonalDetails">
 
     <TextView
@@ -14,82 +13,188 @@
         android:layout_marginTop="10dp"
         android:text="PERSONAL DETAILS : "
         android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
         android:textSize="20dp"
         android:textStyle="bold" />
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="60dp"
+        android:text="MARRITAL STATUS : "
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
     <AutoCompleteTextView
+        android:id="@+id/marriage"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:hint="MARRITAL STATUS : "
-        android:layout_marginTop="50dp"
-        android:id="@+id/marriage"/>
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="50dp" />
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="100dp"
+        android:text="RELIGION : "
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
 
     <EditText
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:hint="RELIGION : "
+        android:layout_marginLeft="130dp"
         android:layout_marginTop="90dp"
         android:id="@+id/religion"/>
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="140dp"
+        android:text="SUB-CASTE : "
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/caste"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="130dp"
-        android:hint="SUB-CASTE : "
+        android:layout_marginLeft="150dp"
         android:inputType="number" />
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="180dp"
+        android:text="AGE : "
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/age"
-        android:layout_width="200dp"
+        android:layout_width="90dp"
+        android:layout_marginLeft="70dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="170dp"
-        android:hint="AGE : "
         android:inputType="phone" />
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="220dp"
+        android:text="RELATIONSHIP WITH HEAD : "
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/relationship"
-        android:layout_width="250dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="210dp"
-        android:hint="RELATIONSHIP WITH HEAD : " />
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="210dp" />
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="260dp"
+        android:text="QUALIFICATION : "
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold" />
     <EditText
         android:id="@+id/qualification"
         android:layout_width="250dp"
+        android:layout_marginLeft="190dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="250dp"
-        android:hint="QUALIFICATION : " />
+        android:layout_marginTop="250dp" />
+    <TextView
+        android:layout_width="270dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="300dp"
+        android:text="SPECIAL CERTIFICAITION : "
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/certification"
-        android:layout_width="300dp"
+        android:layout_width="130dp"
+        android:layout_marginLeft="280dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="290dp"
-        android:hint="ANY SPECIAL CERTIFICATION : " />
+        android:layout_marginTop="290dp"/>
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="340dp"
+        android:text="EMPLOYMENT : "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
     <AutoCompleteTextView
-        android:layout_width="200dp"
+        android:id="@+id/employment"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:hint="MARRITAL STATUS : "
-        android:layout_marginTop="330dp"
-        android:id="@+id/employment"/>
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="330dp" />
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="380dp"
+        android:text="ROLE : "
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold" />
     <EditText
         android:id="@+id/role"
         android:layout_width="200dp"
+        android:layout_marginLeft="90dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="370dp"
-        android:hint="ROLE : " />
+        android:layout_marginTop="370dp" />
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="420dp"
+        android:text="ORGANIZATION NAME : "
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
     <EditText
         android:id="@+id/companyname"
         android:layout_width="410dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="410dp"
-        android:hint="ORGANIZATION NAME : " />
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="410dp" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="460dp"
+        android:text="MONTHLY INCOME : "
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
     <EditText
         android:id="@+id/income"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="450dp"
-        android:hint="MONTHLY INCOME : " />
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="450dp"/>
 
 
 
@@ -97,8 +202,38 @@
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:text="NEXT"
-        android:layout_marginTop="490dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="520dp"
+        android:background="#216400"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
         android:id="@+id/next"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/nav"/>
+
+    <Button
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:id="@+id/map"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent" />
+    <Button
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:id="@+id/search"
+        android:layout_marginLeft="135dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent" />
+    <Button
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:id="@+id/about"
+        android:layout_marginLeft="270dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent" />
 
 
 </RelativeLayout>

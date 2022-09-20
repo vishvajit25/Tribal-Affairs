@@ -7,18 +7,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class southindia extends AppCompatActivity {
-    Button tn,kl,ap,tl,kn;
+public class BankDetails extends AppCompatActivity {
+    Button next;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_southindia);
-        tn=findViewById(R.id.tn);
-        tn.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_bank_details);
+        next = findViewById(R.id.next);
+        next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(southindia.this, MainActivity.class);
-                startActivity(intent);
+                startActivity(new Intent(getApplicationContext(), EducationDetails.class));
+                finish();
             }
         });
     }

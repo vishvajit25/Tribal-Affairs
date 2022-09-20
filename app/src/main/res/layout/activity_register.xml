@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".Register"
     android:id="@+id/ll"
-    android:background="@drawable/bg"
+    android:background="@drawable/bg2"
     android:paddingTop="10sp"
     android:orientation="vertical"
     android:gravity="center_vertical|start"
