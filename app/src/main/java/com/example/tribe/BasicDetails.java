@@ -51,7 +51,7 @@ import java.io.File;
 import java.util.ArrayList;
 
 public class BasicDetails extends AppCompatActivity {
-    Button next, pic;
+    Button next, pic,search;
     String[] genderarr = {"MALE", "FEMALE","PREFER NOT TO SAY"};
     ImageView image;
     EditText etname,fid,aadhar,phoneno,organization;
@@ -126,6 +126,14 @@ public class BasicDetails extends AppCompatActivity {
         String phonenumber=phoneno.getText().toString();
         String org=organization.getText().toString();
         String genderstr = gender.getText().toString();
+        search = findViewById(R.id.search);
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(BasicDetails.this, com.example.tribe.search.class);
+                startActivity(intent);
+            }
+        });
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

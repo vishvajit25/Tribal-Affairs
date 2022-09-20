@@ -1,0 +1,1115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="370dp"
+    android:layout_marginTop="16dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="16dp"
+    android:layout_margin="16dp">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NAME :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:id="@+id/rname"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FAMILY ID :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="id"
+                android:id="@+id/rid"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AADHAR NO :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aadhar"
+                android:id="@+id/raadhar"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PHONE NO :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="phone no"
+                android:id="@+id/rphno"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ORGANIZATION :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="org"
+                android:id="@+id/rorg"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GENDER :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="gender"
+                android:id="@+id/rgender"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MARRIAGE :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mar"
+                android:id="@+id/rmar"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RELIGION :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="rel"
+                android:id="@+id/rreligion"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CASTE :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="caste"
+                android:id="@+id/rcaste"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AGE :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="age"
+                android:id="@+id/rage"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RELATIONSHIP WITH HEAD :"
+                android:textSize="19dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="relation"
+                android:id="@+id/rrel"
+                android:textSize="19dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QUALIFICATION :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="qual"
+                android:id="@+id/rqual"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CERTIFICATION :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cert"
+                android:id="@+id/rcert"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EMPLOYMENT :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:id="@+id/remp"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ROLE :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="role"
+                android:id="@+id/rrole"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COMPANY NAME :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:id="@+id/rcomp"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INCOME :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="income"
+                android:id="@+id/rincome"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BANK ACCOUNT :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bank acc"
+                android:id="@+id/rbankacc"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BANK NAME :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:id="@+id/rbname"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOAN :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="loan"
+                android:id="@+id/rloan"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AMOUNT :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="amount"
+                android:id="@+id/ramount"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VEHICLE :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="vehicle"
+                android:id="@+id/rvehicle"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HIGH EDUCATION :"
+                android:textSize="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="education"
+                android:id="@+id/rhighed"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NAME :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EDU NAME"
+                android:id="@+id/rnameed"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DISTANCE OF EDU :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="distance"
+                android:id="@+id/rdisted"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EDUCATION EXPENSE :"
+                android:textSize="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="exp"
+                android:id="@+id/rexp"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HOUSE :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HOUSE"
+                android:id="@+id/rhouse"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HOUSE FROM :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="from"
+                android:id="@+id/rhousefrom"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HOUSE TYPE :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:id="@+id/rhtype"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PROPERTY :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="property"
+                android:id="@+id/rproperty"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LAND SIZE :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:id="@+id/rland"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HOSPITAL DISTANCE :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dist"
+                android:id="@+id/rdist"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HEALTH PROBLEM :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="yesno"
+                android:id="@+id/rhealthprob"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MEDICINE TYPE :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="type"
+                android:id="@+id/rmedtype"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CHILD DELIVERY :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:id="@+id/rdelivery"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CHILD CARE SYSTEM :"
+                android:textSize="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:id="@+id/rchildcare"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ILL CHILDREN :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ill child"
+                android:id="@+id/rillchild"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HEALTH ISSUE :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="issue"
+                android:id="@+id/rhealthissue"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOBACO USAGE :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tobaco"
+                android:id="@+id/rtobaco"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ALCOHOL :"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:id="@+id/ralcohol"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SELF HELP GROUP :"
+                android:textSize="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:id="@+id/rselfhelp"
+                android:textSize="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="VILLAGE REPRESENTATIVE FROM WHICH COMMUNITY :"
+                android:textSize="15dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:id="@+id/rvillage"
+                android:textSize="25dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+</ScrollView>
