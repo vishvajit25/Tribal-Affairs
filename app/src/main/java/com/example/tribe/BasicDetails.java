@@ -205,7 +205,7 @@ public class BasicDetails extends AppCompatActivity {
                     Person person = new Person(name,famid,aadharno,phonenumber,org,genderstr,"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","");
                     String key = reff.child("Person").push().getKey();
                     reff.child("Person").child(name+famid).setValue(person);
-                    Toast.makeText(BasicDetails.this, key, Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(BasicDetails.this, key, Toast.LENGTH_SHORT).show();
                     Log.d("tag",key);
                     Intent intent = new Intent(BasicDetails.this, PersonalDetails.class);
                     startActivity(intent);

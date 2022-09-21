@@ -58,7 +58,7 @@ public class PersonalDetails extends AppCompatActivity {
         about.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), about.class));
+                startActivity(new Intent(getApplicationContext(), BankDetails.class));
                 finish();
             }
         });
@@ -101,8 +101,8 @@ public class PersonalDetails extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                SharedPreferences sp1=getSharedPreferences("Name",0);
-                String key=sp1.getString("key", null);
+                SharedPreferences sp6=getSharedPreferences("Name",0);
+                String key=sp6.getString("key", null);
                 Log.d("Key",key);
                 String religion = rel.getText().toString();
                 String caste = subcaste.getText().toString();
@@ -127,9 +127,8 @@ public class PersonalDetails extends AppCompatActivity {
                 reff.child("Person").child(key).child("orgname").setValue(organiz);
                 reff.child("Person").child(key).child("income").setValue(incoming);
 
-
-                startActivity(new Intent(getApplicationContext(), BankDetails.class));
-                finish();
+                Intent intent = new Intent(PersonalDetails.this, BankDetails.class);
+                startActivity(intent);
             }
         });
     }

@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Parcelable;
+import android.text.TextUtils;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -24,7 +26,8 @@ public class MainActivity extends AppCompatActivity {
     String[] type = {"Nuclear", "Joint"};
     Button create,next;
     Button map,about,search;
-    EditText familyheadname, id,address,tribename,familysize;
+    String state = "Tamil Nadu";
+    EditText familyheadname, id,address,tribename,familysize,fditrict,fblock,ftaluk,fpanchayat;
     AutoCompleteTextView familytype;
     private FirebaseAuth mAuth;
     FirebaseFirestore fstore;
@@ -68,6 +71,10 @@ public class MainActivity extends AppCompatActivity {
         familysize=findViewById(R.id.familysize);
         familytype=findViewById(R.id.familytype);
         create=findViewById(R.id.create);
+        ftaluk = findViewById(R.id.taluk);
+        fpanchayat=findViewById(R.id.panchayat);
+        fblock=findViewById(R.id.block);
+        fditrict=findViewById(R.id.district);
         next=findViewById(R.id.next);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(),
                 android.R.layout.simple_selectable_list_item,type);
@@ -81,20 +88,58 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
+//        String fheadname2 = familyheadname.getText().toString().trim();
+//        String fid2 = id.getText().toString().trim();
+//        String faddress2 = address.getText().toString().trim();
+//        String ftribename2 = tribename.getText().toString().trim();
+//        String ftype2 = familytype.getText().toString().trim();
+//        String fsize2 = familysize.getText().toString().trim();
+//        String district2 = fditrict.getText().toString().trim();
+//        String taluk2=ftaluk.getText().toString().trim();
+//        String panchayat2=fpanchayat.getText().toString().trim();
+//        String state2="Tamil Nadu";
+//        String block2 = fblock.getText().toString().trim();
         create.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            String fheadname = familyheadname.getText().toString().trim();
-            String fid = id.getText().toString().trim();
-            String faddress = address.getText().toString().trim();
-            String ftribename = tribename.getText().toString().trim();
-            String ftype = familytype.getText().toString().trim();
-            String fsize = familysize.getText().toString().trim();
-            Family family = new Family(fheadname, fid, faddress,ftribename,fsize,ftype);
-            reff.child("Family").push().setValue(family);
-            Toast.makeText(MainActivity.this, "New Family Created", Toast.LENGTH_SHORT).show();
-            startActivity(new Intent(getApplicationContext(), MainActivity.class));
-            finish();
+                if (familyheadname.getText().toString().equals("")) {
+                    familyheadname.setError("FILL THIS FIELD");
+                }
+                if (id.getText().toString().equals("")) {
+                    id.setError("FILL THIS FIELD");
+                }
+                if (fditrict.getText().toString().equals("")) {
+                    fditrict.setError("FILL THIS FIELD");
+                }
+                if (fblock.getText().toString().equals("")) {
+                    fblock.setError("FILL THIS FIELD");
+                }
+                if (ftaluk.getText().toString().equals("")) {
+                    ftaluk.setError("FILL THIS FIELD");
+                }
+                else {
+                    String fheadname = familyheadname.getText().toString().trim();
+                    String fid = id.getText().toString().trim();
+                    String faddress = address.getText().toString().trim();
+                    String ftribename = tribename.getText().toString().trim();
+                    String ftype = familytype.getText().toString().trim();
+                    String fsize = familysize.getText().toString().trim();
+                    String district = fditrict.getText().toString().trim();
+                    String taluk = ftaluk.getText().toString().trim();
+                    String panchayat = fpanchayat.getText().toString().trim();
+                    String state = "Tamil Nadu";
+                    String block = fblock.getText().toString().trim();
+                    char id1 = state.charAt(0);
+                    char id2 = district.charAt(0);
+                    char id3 = block.charAt(0);
+                    String finalid = (String.valueOf(id1) + String.valueOf(id2) + String.valueOf(id3)).toString();
+                    Log.d("ID", finalid + fid);
+                    Family family = new Family(fheadname, finalid + fid, faddress, fsize, ftype, state, district, block, taluk, panchayat, ftribename);
+                    reff.child("Family").push().setValue(family);
+                    Toast.makeText(MainActivity.this, "New Family Created", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                    finish();
+                }
 
             }
         });

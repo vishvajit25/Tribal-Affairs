@@ -205,7 +205,7 @@
         android:text="NEXT"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="520dp"
-        android:background="#216400"
+        android:background="@drawable/buttonstyle"
         android:textColor="@color/white"
         android:layout_centerHorizontal="true"
         android:id="@+id/next"/>

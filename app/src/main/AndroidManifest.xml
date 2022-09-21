@@ -11,7 +11,8 @@
         android:theme="@style/Theme.Tribe">
         <activity
             android:name=".about"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity
             android:name=".userlist"
             android:exported="false"

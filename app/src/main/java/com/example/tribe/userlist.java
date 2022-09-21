@@ -50,7 +50,7 @@ public class userlist extends AppCompatActivity {
                     String name=sp3.getString("name", null);
                     String id=sp3.getString("id", null);
                     Log.d("Name",name);
-                    if(name.equals(user.getname())) {
+                    if(name.equals(user.getname()) && id.equals(user.getFamilyid())) {
                         list.add(user);
                     }
 

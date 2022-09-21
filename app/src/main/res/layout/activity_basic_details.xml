@@ -10,11 +10,21 @@
     <TextView
         android:layout_width="200dp"
         android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:text="BASIC DETAILS : "
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:text="NAME : "
         android:textColor="@color/black"
         android:textSize="20dp"
-        android:layout_marginLeft="10dp"
         android:textStyle="bold" />
 
 
@@ -22,16 +32,16 @@
         android:id="@+id/name1"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="10dp"
-        android:hint="NAME : " />
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="50dp" />
 
     <ImageView
         android:id="@+id/imageview"
         android:layout_width="120dp"
         android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginLeft="260dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="360dp"
         android:src="@drawable/person"
         tools:ignore="Suspicious0dp" />
 
@@ -39,60 +49,158 @@
         android:id="@+id/pic"
         android:layout_width="120dp"
         android:layout_height="40dp"
-        android:background="#216400"
+        android:background="@drawable/buttonstyle"
         android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
         android:layout_marginLeft="260dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="480dp"
         android:text="SNAP" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="370dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/note"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/warning">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NOTE : "
+            android:gravity="center_horizontal"
+            android:textColor="#FF0000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FAMILY ID IS  "
+                android:gravity="center_horizontal"
+                android:textColor="#FF0000"
+                android:textSize="15dp"
+                android:layout_marginTop="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal"
+                android:text="FIRST LETTER OF STATE + FIRST LETTER OF DISTRICT +"
+                android:textColor="#FF0000"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:gravity="center_horizontal"
+                android:text="FIRST LETTER OF BLOCK +  FAMILY ID NUMBER "
+                android:textColor="#FF0000"
+                android:textSize="15dp" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:text="FAMILY ID : "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
     <EditText
         android:layout_width="200dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="130dp"
         android:layout_height="wrap_content"
-        android:hint="FAMILY ID : "
         android:layout_marginTop="90dp"
         android:id="@+id/familyid1"/>
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="140dp"
+        android:text="AADHAR NUMBER : "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/aadhar"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="190dp"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="130dp"
-        android:hint="AADHAR NUMBER : "
         android:inputType="number" />
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="180dp"
+        android:text="PHONE NUMBER : "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/phoneno"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="170dp"
-        android:layout_marginLeft="10dp"
-        android:hint="PHONE NUMBER : "
+        android:layout_marginLeft="185dp"
         android:inputType="phone" />
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="220dp"
+        android:text="ORGANIZATION : "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/org"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="210dp"
+        android:layout_marginLeft="180dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
         android:layout_marginLeft="10dp"
-        android:hint="ORGANIZATION : " />
+        android:layout_marginTop="260dp"
+        android:text="GENDER : "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
     <AutoCompleteTextView
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:hint="GENDER : "
         android:layout_marginTop="250dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="110dp"
         android:id="@+id/gender"/>
 
     <Button
         android:id="@+id/next"
         android:layout_width="200dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="300dp"
-        android:background="#216400"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="310dp"
+        android:background="@drawable/buttonstyle"
         android:text="NEXT"
         android:textColor="@color/white" />
     <ImageView
@@ -102,9 +210,9 @@
         android:src="@drawable/nav"/>
 
     <Button
+        android:id="@+id/map"
         android:layout_width="135dp"
         android:layout_height="50dp"
-        android:id="@+id/map"
         android:layout_alignParentBottom="true"
         android:background="@android:color/transparent" />
     <Button

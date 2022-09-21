@@ -2,6 +2,7 @@ package com.example.tribe;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.Manifest;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
@@ -13,6 +14,7 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.tribe.R;
 import com.google.firebase.database.DatabaseReference;
@@ -119,8 +121,9 @@ public class HouseDetails extends AppCompatActivity {
 //                reff.child("Person").child(key).child("role").setValue(roles);
 //                reff.child("Person").child(key).child("orgname").setValue(organiz);
 //                reff.child("Person").child(key).child("income").setValue(incoming);
-                startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                finish();
+                Toast.makeText(HouseDetails.this, "FAMILY MEMBER DETAILS FILLED", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(HouseDetails.this, MainActivity.class);
+                startActivity(intent);
             }
         });
     }
