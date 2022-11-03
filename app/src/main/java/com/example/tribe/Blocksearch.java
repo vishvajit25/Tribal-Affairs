@@ -2,30 +2,20 @@ package com.example.tribe;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.Manifest;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 
-import com.google.firebase.storage.StorageReference;
-
-public class search extends AppCompatActivity {
-    Button search,search2,map,about;
-    EditText etname,etid;
-
-
+public class Blocksearch extends AppCompatActivity {
+    Button search2,search,map,about;
+    EditText block;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        setContentView(R.layout.activity_search);
-        search=findViewById(R.id.btnsearch);
-        etname=findViewById(R.id.name1);
-        etid=findViewById(R.id.familyid1);
+        setContentView(R.layout.activity_blocksearch);
         map=findViewById(R.id.map);
         map.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,8 +24,8 @@ public class search extends AppCompatActivity {
                 finish();
             }
         });
-        search2=findViewById(R.id.search);
-        search2.setOnClickListener(new View.OnClickListener() {
+        search=findViewById(R.id.search);
+        search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), MainSearch.class));
@@ -50,24 +40,26 @@ public class search extends AppCompatActivity {
                 finish();
             }
         });
-        search.setOnClickListener(new View.OnClickListener() {
+        search2=findViewById(R.id.btnsearch);
+        block=findViewById(R.id.block);
+        search2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(etname.getText().toString().equals("")){
-                    etname.setError("COMPULSORY");
-                }
-                else if(etid.getText().toString().equals("")){
-                    etid.setError("COMPULSORY");
+                if(block.getText().toString().equals("")){
+                    block.setError("COMPULSORY");
                 }
                 else {
-                    String name = etname.getText().toString();
-                    String id = etid.getText().toString();
-                    SharedPreferences sp2 = getSharedPreferences("SearchName", 0);
-                    SharedPreferences.Editor Ed = sp2.edit();
-                    Ed.putString("name", name);
-                    Ed.putString("id", id);
+                    String blockname = block.getText().toString();
+                    String flag = "block";
+                    SharedPreferences sp4 = getSharedPreferences("Block", 0);
+                    SharedPreferences.Editor Ed = sp4.edit();
+                    Ed.putString("blockname", blockname);
                     Ed.commit();
-                    Intent intent = new Intent(com.example.tribe.search.this, userlist.class);
+                    SharedPreferences sp10 = getSharedPreferences("flag", 0);
+                    SharedPreferences.Editor Ed1 = sp10.edit();
+                    Ed1.putString("flag", flag);
+                    Ed1.commit();
+                    Intent intent = new Intent(com.example.tribe.Blocksearch.this, familyuser.class);
                     startActivity(intent);
                 }
             }

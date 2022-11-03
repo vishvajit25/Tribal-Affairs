@@ -50,7 +50,7 @@ public class PersonalDetails extends AppCompatActivity {
         search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), search.class));
+                startActivity(new Intent(getApplicationContext(), MainSearch.class));
                 finish();
             }
         });

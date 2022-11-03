@@ -25,7 +25,7 @@ public class about extends AppCompatActivity {
         search2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), search.class));
+                startActivity(new Intent(getApplicationContext(), MainSearch.class));
                 finish();
             }
         });

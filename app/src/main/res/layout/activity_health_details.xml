@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/bg2"
+tools:context=".HealthDetails">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:text="HEALTH DETAILS : "
+    android:textColor="@color/black"
+    android:layout_centerHorizontal="true"
+    android:textSize="30dp"
+    android:textStyle="bold" />
+
+<TextView
+    android:layout_width="200dp"
+    android:layout_height="30dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="100dp"
+    android:text="HEALTH PROBLEM ? "
+    android:textColor="@color/black"
+    android:textSize="20dp"
+    android:inputType="number"
+    android:textStyle="bold" />
+
+<AutoCompleteTextView
+    android:id="@+id/healthprob"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="210dp"
+    android:layout_marginTop="90dp"
+    android:inputType="text" />
+    <TextView
+        android:layout_width="320dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="130dp"
+        android:text="WHAT PROBLEM : "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/healthprobname"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:inputType="number"
+        android:layout_marginTop="120dp" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="170dp"
+        android:text="DISTANCE TO HOSPITAL : "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/distancetohosp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="160dp"
+        android:inputType="number" />
+
+
+
+<TextView
+    android:layout_width="320dp"
+    android:layout_height="30dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="210dp"
+    android:text="WHAT MEDICINE DO YOU PREFER : "
+    android:textColor="@color/black"
+    android:textSize="20dp"
+    android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/rg1"
+        android:orientation="horizontal"
+        android:layout_marginTop="230dp">
+ <RadioButton
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/rg1rb1"
+     android:textSize="20dp"
+     android:text="MODERN"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:id="@+id/rg1rb2"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="TRADITION"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="320dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="280dp"
+        android:text="CHILD DELIVERY : "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/rg2"
+        android:orientation="horizontal"
+        android:layout_marginTop="300dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rg2rb1"
+            android:textSize="20dp"
+            android:text="HOSPITAL"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:id="@+id/rg2rb2"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="HOME"/>
+    </RadioGroup>
+<TextView
+    android:layout_width="270dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="340dp"
+    android:text="ANY CHILD CARE SYSTEM :"
+    android:textColor="@color/black"
+    android:textSize="20dp"
+    android:textStyle="bold" />
+
+
+    <AutoCompleteTextView
+        android:id="@+id/childcare"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="330dp" />
+
+    <TextView
+        android:layout_width="290dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="380dp"
+        android:text="ILL HEALTH FACED CHILDREN : "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <AutoCompleteTextView
+        android:id="@+id/illchild"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="370dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="420dp"
+        android:text="PARTICULAR HEALTH ISSUE IN FAMILY? : "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/healthissue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="440dp" />
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="490dp"
+        android:text="USE OF TOBACCO : "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:id="@+id/rg3"
+        android:orientation="horizontal"
+        android:layout_marginTop="480dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rg3rb1"
+            android:textSize="20dp"
+            android:text="YES"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:id="@+id/rg3rb2"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="NO"/>
+    </RadioGroup>
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="520dp"
+        android:text="USE OF ALCOHOL : "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:id="@+id/rg4"
+        android:orientation="horizontal"
+        android:layout_marginTop="510dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rg4rb1"
+            android:textSize="20dp"
+            android:text="YES"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:id="@+id/rg4rb2"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="NO"/>
+    </RadioGroup>
+
+
+
+    <!--<TextView-->
+<!--    android:layout_width="110dp"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginLeft="10dp"-->
+<!--    android:layout_marginTop="220dp"-->
+<!--    android:text="VEHICLE :"-->
+<!--    android:textColor="@color/black"-->
+<!--    android:textSize="20dp"-->
+<!--    android:textStyle="bold" />-->
+
+
+<!--<AutoCompleteTextView-->
+<!--    android:id="@+id/vehicle"-->
+<!--    android:layout_width="250dp"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginLeft="120dp"-->
+<!--    android:layout_marginTop="210dp" />-->
+
+
+<Button
+    android:id="@+id/next"
+    android:layout_width="200dp"
+    android:layout_height="40dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="580dp"
+    android:background="@drawable/buttonstyle"
+    android:textColor="@color/white"
+    android:gravity="center_horizontal"
+    android:text="SUBMIT" />
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    android:src="@drawable/nav"/>
+
+<Button
+    android:id="@+id/map"
+    android:layout_width="135dp"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    android:background="@android:color/transparent" />
+
+<Button
+    android:id="@+id/search"
+    android:layout_width="135dp"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    android:layout_marginLeft="135dp"
+    android:background="@android:color/transparent" />
+
+<Button
+    android:id="@+id/about"
+    android:layout_width="135dp"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    android:layout_marginLeft="270dp"
+    android:background="@android:color/transparent" />
+
+
+
+</RelativeLayout>

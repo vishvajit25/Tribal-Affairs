@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/bg2"
+tools:context=".SearchFilter">
+
+<TextView
+    android:layout_width="200dp"
+    android:layout_height="40dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="30dp"
+    android:text="SEARCH BY : "
+    android:textColor="@color/black"
+    android:textSize="30dp"
+    android:textStyle="bold" />
+
+
+
+    <Button
+        android:id="@+id/person"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/buttonstyle"
+        android:text="FAMILY ID"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/settlement"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/buttonstyle"
+        android:text="SETTLEMENT"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white" />
+    <Button
+        android:id="@+id/state"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/buttonstyle"
+        android:text="STATE"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white" />
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    android:src="@drawable/nav"/>
+
+<Button
+    android:layout_width="135dp"
+    android:layout_height="50dp"
+    android:id="@+id/map"
+    android:layout_alignParentBottom="true"
+    android:background="@android:color/transparent" />
+<Button
+    android:layout_width="135dp"
+    android:layout_height="50dp"
+    android:id="@+id/search"
+    android:layout_marginLeft="135dp"
+    android:layout_alignParentBottom="true"
+    android:background="@android:color/transparent" />
+<Button
+    android:layout_width="135dp"
+    android:layout_height="50dp"
+    android:id="@+id/about"
+    android:layout_marginLeft="270dp"
+    android:layout_alignParentBottom="true"
+    android:background="@android:color/transparent" />
+
+
+</RelativeLayout>

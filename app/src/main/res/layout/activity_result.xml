@@ -1,41 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:background="@drawable/bg2"
-tools:context=".result">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".search">
 
-<!--    <androidx.recyclerview.widget.RecyclerView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:layout_marginTop="240dp"-->
-<!--        android:layout_marginLeft="20dp"-->
-<!--        android:id="@+id/userlist"/>-->
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="150dp"
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="40dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="140dp"
-        android:layout_marginTop="30dp">
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="GET PHOTO : "
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="70dp"
+        android:text="NAME : "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
 
-    <ImageView
-        android:id="@+id/image"
+    <EditText
+        android:id="@+id/name1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="130dp" />
+
+    <TextView
         android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="110dp"
+        android:text="FAMILY ID : "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/familyid1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="100dp" />
+
+
+    <Button
+        android:id="@+id/btnsearch"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/buttonstyle"
+        android:text="SEARCH"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:src="@drawable/person"
-        tools:ignore="Suspicious0dp" />
+        android:textColor="@color/white" />
 
-    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="30dp">
 
 
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="320dp"
+                android:layout_height="320dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="230dp"
+                android:src="@drawable/person"
+                tools:ignore="Suspicious0dp" />
+            <Button
+                android:id="@+id/detail"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="560dp"
+                android:background="@drawable/buttonstyle"
+                android:text="GET DETAILS"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white" />
 
+        </RelativeLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/nav"/>
 
+    <Button
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:id="@+id/map"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent" />
+    <Button
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:id="@+id/search"
+        android:layout_marginLeft="135dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent" />
+    <Button
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:id="@+id/about"
+        android:layout_marginLeft="270dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent" />
 
 
 </RelativeLayout>
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@drawable/bg2"-->
+    <!--tools:context=".result">-->
+
+    <!--&lt;!&ndash;    <androidx.recyclerview.widget.RecyclerView&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginTop="240dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginLeft="20dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:id="@+id/userlist"/>&ndash;&gt;-->
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="150dp"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginLeft="140dp"-->
+    <!--        android:layout_marginTop="30dp">-->
+    <!--       -->
+
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/image"-->
+    <!--        android:layout_width="120dp"-->
+    <!--        android:layout_height="120dp"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginTop="30dp"-->
+    <!--        android:src="@drawable/person"-->
+    <!--        tools:ignore="Suspicious0dp" />-->
+
+    <!--    </RelativeLayout>-->
+
+
+
+
+
+
+    <!--</RelativeLayout>-->

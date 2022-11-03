@@ -2,30 +2,20 @@ package com.example.tribe;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.Manifest;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 
-import com.google.firebase.storage.StorageReference;
-
-public class search extends AppCompatActivity {
-    Button search,search2,map,about;
-    EditText etname,etid;
-
-
+public class Taluksearch extends AppCompatActivity {
+    Button search2,search,map,about;
+    EditText taluk;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        setContentView(R.layout.activity_search);
-        search=findViewById(R.id.btnsearch);
-        etname=findViewById(R.id.name1);
-        etid=findViewById(R.id.familyid1);
+        setContentView(R.layout.activity_taluksearch);
         map=findViewById(R.id.map);
         map.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,8 +24,8 @@ public class search extends AppCompatActivity {
                 finish();
             }
         });
-        search2=findViewById(R.id.search);
-        search2.setOnClickListener(new View.OnClickListener() {
+        search=findViewById(R.id.search);
+        search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), MainSearch.class));
@@ -50,24 +40,26 @@ public class search extends AppCompatActivity {
                 finish();
             }
         });
-        search.setOnClickListener(new View.OnClickListener() {
+        search2=findViewById(R.id.btnsearch);
+        taluk=findViewById(R.id.taluk);
+        search2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(etname.getText().toString().equals("")){
-                    etname.setError("COMPULSORY");
-                }
-                else if(etid.getText().toString().equals("")){
-                    etid.setError("COMPULSORY");
+                if(taluk.getText().toString().equals("")){
+                    taluk.setError("COMPULSORY");
                 }
                 else {
-                    String name = etname.getText().toString();
-                    String id = etid.getText().toString();
-                    SharedPreferences sp2 = getSharedPreferences("SearchName", 0);
-                    SharedPreferences.Editor Ed = sp2.edit();
-                    Ed.putString("name", name);
-                    Ed.putString("id", id);
+                    String blockname = taluk.getText().toString();
+                    SharedPreferences sp6 = getSharedPreferences("Taluk", 0);
+                    SharedPreferences.Editor Ed = sp6.edit();
+                    Ed.putString("talukname", blockname);
                     Ed.commit();
-                    Intent intent = new Intent(com.example.tribe.search.this, userlist.class);
+                    String flag = "taluk";
+                    SharedPreferences sp12 = getSharedPreferences("flag", 0);
+                    SharedPreferences.Editor Ed2 = sp12.edit();
+                    Ed2.putString("flag", flag);
+                    Ed2.commit();
+                    Intent intent = new Intent(com.example.tribe.Taluksearch.this, familyuser.class);
                     startActivity(intent);
                 }
             }
