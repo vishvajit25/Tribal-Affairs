@@ -33,6 +33,7 @@ public class PersonalDetails extends AppCompatActivity {
     FirebaseFirestore fstore;
     DatabaseReference reff;
     String[] yesno={"YES","NO"};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

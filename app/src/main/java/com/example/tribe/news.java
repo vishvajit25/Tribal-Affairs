@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class news extends AppCompatActivity {
-    Button n,e,w,s;
+    Button n,e,w,s,ne;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,14 +18,22 @@ public class news extends AppCompatActivity {
         e=findViewById(R.id.east);
         w=findViewById(R.id.west);
         s=findViewById(R.id.south);
+        ne=findViewById(R.id.northeast);
         n.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(news.this, northindia.class);
+                startActivity(intent);
+            }
+        });
+        e.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(news.this, MainActivity.class);
                 startActivity(intent);
             }
         });
-        e.setOnClickListener(new View.OnClickListener() {
+        ne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(news.this, MainActivity.class);

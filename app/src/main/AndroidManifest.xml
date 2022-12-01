@@ -10,17 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tribe">
         <activity
+            android:name=".northindia"
+            android:exported="false" />
+        <activity
             android:name=".Districtsearch"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".Panchayatsearch"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".Taluksearch"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".familyuser"
             android:exported="false"

@@ -29,13 +29,13 @@ tools:context=".HealthDetails">
     android:inputType="number"
     android:textStyle="bold" />
 
-<AutoCompleteTextView
-    android:id="@+id/healthprob"
-    android:layout_width="250dp"
-    android:layout_height="wrap_content"
-    android:layout_marginLeft="210dp"
-    android:layout_marginTop="90dp"
-    android:inputType="text" />
+    <AutoCompleteTextView
+        android:id="@+id/healthprob"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="90dp"
+        android:inputType="text" />
     <TextView
         android:layout_width="320dp"
         android:layout_height="30dp"
@@ -83,26 +83,33 @@ tools:context=".HealthDetails">
     android:textSize="20dp"
     android:textStyle="bold" />
 
-    <RadioGroup
-        android:layout_width="wrap_content"
+    <AutoCompleteTextView
+        android:id="@+id/med"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:id="@+id/rg1"
-        android:orientation="horizontal"
-        android:layout_marginTop="230dp">
- <RadioButton
-     android:layout_width="wrap_content"
-     android:layout_height="wrap_content"
-     android:id="@+id/rg1rb1"
-     android:textSize="20dp"
-     android:text="MODERN"/>
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:id="@+id/rg1rb2"
-        android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:text="TRADITION"/>
-    </RadioGroup>
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="230dp" />
+
+<!--    <RadioGroup-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="15dp"-->
+<!--        android:id="@+id/rg1"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_marginTop="230dp">-->
+<!-- <RadioButton-->
+<!--     android:layout_width="wrap_content"-->
+<!--     android:layout_height="wrap_content"-->
+<!--     android:id="@+id/rg1rb1"-->
+<!--     android:textSize="20dp"-->
+<!--     android:text="MODERN"/>-->
+<!--    <RadioButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:id="@+id/rg1rb2"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="20dp"-->
+<!--        android:text="TRADITION"/>-->
+<!--    </RadioGroup>-->
 
     <TextView
         android:layout_width="320dp"
@@ -113,27 +120,33 @@ tools:context=".HealthDetails">
         android:textColor="@color/black"
         android:textSize="20dp"
         android:textStyle="bold" />
-
-    <RadioGroup
-        android:layout_width="wrap_content"
+    <AutoCompleteTextView
+        android:id="@+id/delivery"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:id="@+id/rg2"
-        android:orientation="horizontal"
-        android:layout_marginTop="300dp">
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/rg2rb1"
-            android:textSize="20dp"
-            android:text="HOSPITAL"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:id="@+id/rg2rb2"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="HOME"/>
-    </RadioGroup>
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="300dp" />
+
+<!--    <RadioGroup-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="15dp"-->
+<!--        android:id="@+id/rg2"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_marginTop="300dp">-->
+<!--        <RadioButton-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/rg2rb1"-->
+<!--            android:textSize="20dp"-->
+<!--            android:text="HOSPITAL"/>-->
+<!--        <RadioButton-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:id="@+id/rg2rb2"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="20dp"-->
+<!--            android:text="HOME"/>-->
+<!--    </RadioGroup>-->
 <TextView
     android:layout_width="270dp"
     android:layout_height="wrap_content"
@@ -194,27 +207,34 @@ tools:context=".HealthDetails">
         android:textColor="@color/black"
         android:textSize="20dp"
         android:textStyle="bold" />
-
-    <RadioGroup
-        android:layout_width="wrap_content"
+    <AutoCompleteTextView
+        android:id="@+id/tobaco"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="200dp"
-        android:id="@+id/rg3"
-        android:orientation="horizontal"
-        android:layout_marginTop="480dp">
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/rg3rb1"
-            android:textSize="20dp"
-            android:text="YES"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:id="@+id/rg3rb2"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="NO"/>
-    </RadioGroup>
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="480dp"
+        />
+
+<!--    <RadioGroup-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="200dp"-->
+<!--        android:id="@+id/rg3"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_marginTop="480dp">-->
+<!--        <RadioButton-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/rg3rb1"-->
+<!--            android:textSize="20dp"-->
+<!--            android:text="YES"/>-->
+<!--        <RadioButton-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:id="@+id/rg3rb2"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="20dp"-->
+<!--            android:text="NO"/>-->
+<!--    </RadioGroup>-->
     <TextView
         android:layout_width="180dp"
         android:layout_height="30dp"
@@ -224,27 +244,34 @@ tools:context=".HealthDetails">
         android:textColor="@color/black"
         android:textSize="20dp"
         android:textStyle="bold" />
-
-    <RadioGroup
-        android:layout_width="wrap_content"
+    <AutoCompleteTextView
+        android:id="@+id/alcohol"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="200dp"
-        android:id="@+id/rg4"
-        android:orientation="horizontal"
-        android:layout_marginTop="510dp">
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/rg4rb1"
-            android:textSize="20dp"
-            android:text="YES"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:id="@+id/rg4rb2"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="NO"/>
-    </RadioGroup>
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="510dp"
+        />
+
+<!--    <RadioGroup-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="200dp"-->
+<!--        android:id="@+id/rg4"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_marginTop="510dp">-->
+<!--        <RadioButton-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/rg4rb1"-->
+<!--            android:textSize="20dp"-->
+<!--            android:text="YES"/>-->
+<!--        <RadioButton-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:id="@+id/rg4rb2"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="20dp"-->
+<!--            android:text="NO"/>-->
+<!--    </RadioGroup>-->
 
 
 
