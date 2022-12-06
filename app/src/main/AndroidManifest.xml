@@ -10,7 +10,109 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tribe">
         <activity
+            android:name=".Goa"
+            android:exported="false" />
+        <activity
+            android:name=".Maharashtra"
+            android:exported="false" />
+        <activity
+            android:name=".Gujarat"
+            android:exported="false" />
+        <activity
+            android:name=".westindia"
+            android:exported="false" />
+        <activity
+            android:name=".Mizoram"
+            android:exported="false" />
+        <activity
+            android:name=".Tripura"
+            android:exported="false" />
+        <activity
+            android:name=".Manipur"
+            android:exported="false" />
+        <activity
+            android:name=".Meghalaya"
+            android:exported="false" />
+        <activity
+            android:name=".Nagaland"
+            android:exported="false" />
+        <activity
+            android:name=".Assam"
+            android:exported="false" />
+        <activity
+            android:name=".ArunachalPradesh"
+            android:exported="false" />
+        <activity
+            android:name=".northeastindia"
+            android:exported="false" />
+        <activity
             android:name=".northindia"
+            android:exported="false" />
+        <activity
+            android:name=".Orissa"
+            android:exported="false" />
+        <activity
+            android:name=".WestBengal"
+            android:exported="false" />
+        <activity
+            android:name=".Jharkhand"
+            android:exported="false" />
+        <activity
+            android:name=".Bihar"
+            android:exported="false" />
+        <activity
+            android:name=".Sikkim"
+            android:exported="false" />
+        <activity
+            android:name=".eastindia"
+            android:exported="false" />
+        <activity
+            android:name=".Delhi"
+            android:exported="false" />
+        <activity
+            android:name=".Chattisgarh"
+            android:exported="false" />
+        <activity
+            android:name=".MadhyaPradesh"
+            android:exported="false" />
+        <activity
+            android:name=".UttarPradesh"
+            android:exported="false" />
+        <activity
+            android:name=".Rajasthan"
+            android:exported="false" />
+        <activity
+            android:name=".Haryana"
+            android:exported="false" />
+        <activity
+            android:name=".Uttarakhand"
+            android:exported="false" />
+        <activity
+            android:name=".Punjab"
+            android:exported="false" />
+        <activity
+            android:name=".HimachalPradesh"
+            android:exported="false" />
+        <activity
+            android:name=".JammuandKashmir"
+            android:exported="false" />
+        <activity
+            android:name=".Karnataka"
+            android:exported="false" />
+        <activity
+            android:name=".Telangana"
+            android:exported="false" />
+        <activity
+            android:name=".Kerala"
+            android:exported="false" />
+        <activity
+            android:name=".AndhraPradesh"
+            android:exported="false" />
+        <activity
+            android:name=".AndamanAndNicobar"
+            android:exported="false" />
+        <activity
+            android:name=".eastindia"
             android:exported="false" />
         <activity
             android:name=".Districtsearch"

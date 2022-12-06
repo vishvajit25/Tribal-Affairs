@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg2"
+    android:layout_height="match_parent"
+    tools:context=".eastindia">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:src="@drawable/east" />
+
+    <Button
+        android:id="@+id/orissa"
+        android:layout_width="190dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="390dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/jharkhand"
+        android:layout_width="140dp"
+        android:layout_height="89dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="300dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/westbengal"
+        android:layout_width="100dp"
+        android:layout_height="137dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="300dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/bihar"
+        android:layout_width="150dp"
+        android:layout_height="77dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="230dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/sikkim"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="150dp"
+        android:background="@android:color/transparent" />
+
+
+
+<!--    <Button-->
+<!--        android:id="@+id/delhi"-->
+<!--        android:layout_width="80dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="580dp"-->
+<!--        android:background="@drawable/buttonstyle"-->
+<!--        android:text="DELHI" />-->
+
+
+
+</RelativeLayout>

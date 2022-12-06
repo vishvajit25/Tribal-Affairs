@@ -21,5 +21,37 @@ public class southindia extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        ap=findViewById(R.id.andra);
+        ap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(southindia.this, AndhraPradesh.class);
+                startActivity(intent);
+            }
+        });
+        kl=findViewById(R.id.kerala);
+        kl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(southindia.this, Kerala.class);
+                startActivity(intent);
+            }
+        });
+        tl=findViewById(R.id.telengana);
+        tl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(southindia.this, Telangana.class);
+                startActivity(intent);
+            }
+        });
+        kn=findViewById(R.id.kn);
+        kn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(southindia.this, Karnataka.class);
+                startActivity(intent);
+            }
+        });
     }
 }

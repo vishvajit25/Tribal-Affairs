@@ -29,21 +29,21 @@ public class news extends AppCompatActivity {
         e.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(news.this, MainActivity.class);
+                Intent intent = new Intent(news.this, eastindia.class);
                 startActivity(intent);
             }
         });
         ne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(news.this, MainActivity.class);
+                Intent intent = new Intent(news.this, northeastindia.class);
                 startActivity(intent);
             }
         });
         w.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(news.this, MainActivity.class);
+                Intent intent = new Intent(news.this, westindia.class);
                 startActivity(intent);
             }
         });
